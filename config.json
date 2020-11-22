@@ -13,7 +13,7 @@
     "dist": "docs/api/"
   },
   "css": {
-    "src": "src/scss/**/*.scss",
+    "src": "src/assets/scss/**/*.scss",
     "dest": "public/assets/css/",
     "dist": "docs/assets/css/"
   },
@@ -30,9 +30,14 @@
     "dist": "docs/assets/js/"
   },
   "images": {
-    "src": "src/images/**/*.{gif,jpg,jpeg,JPG,JPEG,png,svg}",
+    "src": "src/assets/images/**/*.{gif,jpg,jpeg,JPG,JPEG,png,svg}",
     "dest": "public/assets/images/",
     "dist": "docs/assets/images/"
+  },
+  "fonts": {
+    "src": "src/assets/fonts/**/*.{otf}",
+    "dest": "public/assets/fonts/",
+    "dist": "docs/assets/fonts/"
   },
   "watch": {
     "html": "src/**/*.html"
