@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap');
 @import 'core/variables';
 @import 'core/reset';
 
@@ -6,26 +7,31 @@
   display: none;
 }
 .svg__arrow {
-  background-color: $black;
   margin-right: 3rem;
   width: 1rem;
+  height: 1rem;
 }
 .svg__heart {
   background-color: $white;
+  width: 6rem;
+  margin-left: 1rem;
 }
 .svg__cow {
   background-color: $white;
+  width: 6rem;
 }
 
 // header
 .header {
   &__container {
+    font-family: 'Syne', sans-serif;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
   }
   &__iframe {
     margin-bottom: 3rem;
+    border: black 1rem solid;
   }
   &__title {
     font-size: 3.5rem;
@@ -70,10 +76,11 @@
     width: 1rem;
   }
   &__list-item {
-    margin: 0.5rem 0;
+    padding-bottom: 0.5rem;
     list-style: none;
     display: flex;
     flex-flow: row nowrap;
+    justify-content: flex-start;
     align-items: flex-start;
   }
   &__link {
@@ -96,10 +103,10 @@
 // footer
 .footer {
   &__container {
-    padding: 1.5rem 0;
+    padding: 2.5rem 0;
     background-color: white;
     display: flex;
-    flex-flow: row no-wrap;
+    flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
   }
@@ -108,14 +115,14 @@
     color: $black;
     font-size: 4rem;
   }
-  &__heart {
-    background-color: white;
+  // &__heart {
+  //   background-color: white;
 
-    height: 5rem;
-    margin-left: 0.75rem;
-  }
-  &__cow {
-    background-color: white;
-    height: 5rem;
-  }
+  //   height: 5rem;
+  //   margin-left: 0.75rem;
+  // }
+  // &__cow {
+  //   background-color: white;
+  //   height: 5rem;
+  // }
 }
