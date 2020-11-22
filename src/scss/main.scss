@@ -36,6 +36,7 @@
 }
 
 // main
+
 .main {
   &__container {
     padding-top: 4rem;
@@ -45,13 +46,14 @@
     align-items: center;
   }
   &__title {
-    font-size: 2.25rem;
+    font-size: 2.15rem;
   }
   &__arrow {
+    margin-right: 3rem;
     width: 1rem;
   }
   &__list-item {
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     list-style: none;
     display: flex;
     flex-flow: row nowrap;
@@ -59,6 +61,7 @@
   }
   &__link {
     text-decoration: none;
+    font-size: 0.75rem;
     color: $link;
   }
 }
@@ -76,6 +79,7 @@
 // footer
 .footer {
   &__container {
+    padding: 1.5rem 0;
     background-color: white;
     display: flex;
     flex-flow: row no-wrap;
@@ -89,6 +93,7 @@
   }
   &__heart {
     background-color: white;
+
     height: 5rem;
     margin-left: 0.75rem;
   }
