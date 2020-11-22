@@ -1,0 +1,62 @@
+@import 'core/variables';
+@import 'core/reset';
+
+// header
+.header {
+  &__container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+  &__title {
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  &__bar-grey {
+    width: 50%;
+    background-color: $grey;
+    height: 3rem;
+  }
+}
+
+// main
+.main {
+  &__arrow {
+    width: 1rem;
+  }
+  &__list-item {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+  }
+  &__link {
+    text-decoration: none;
+    color: $link;
+  }
+}
+
+// footer
+.footer {
+  &__container {
+    display: flex;
+    flex-flow: row no-wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  &__small {
+    font-size: 4rem;
+  }
+  //   &__mask {
+  //     background-color: red;
+  //     -webkit-mask: url(../images/heart.svg) no-repeat center;
+  //     mask: url(../images/heart.svg) no-repeat center;
+  //   }
+  &__heart {
+    height: 5rem;
+    margin-left: 0.75rem;
+  }
+  &__cow {
+    height: 5rem;
+  }
+}
