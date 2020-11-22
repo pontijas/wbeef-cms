@@ -47,7 +47,7 @@
   &__bar-grey {
     margin-left: 0;
     width: 50vw;
-    background-color: $grey;
+    background-color: $marengo;
     height: 1rem;
   }
   &__bar-red {
@@ -76,7 +76,7 @@
     width: 1rem;
   }
   &__list-item {
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
     list-style: none;
     display: flex;
     flex-flow: row nowrap;
@@ -86,7 +86,12 @@
   &__link {
     text-decoration: none;
     font-size: 0.75rem;
-    color: $link;
+  }
+  &__name {
+    font-size: 1.5rem;
+  }
+  &__restaurant {
+    color: $grey;
   }
 }
 
