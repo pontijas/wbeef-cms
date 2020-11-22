@@ -2,6 +2,7 @@
 
 Web Development:
 Cristina Pontijas
+https://cristinapontijas.xyz/
 
 Graphic Design: 
 Xavier Barr
