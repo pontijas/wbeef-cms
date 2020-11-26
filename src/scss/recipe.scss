@@ -6,59 +6,80 @@
 .svg {
   display: none;
 }
-.svg__arrow {
-  margin-right: 3rem;
+.svg__arrow-forward {
   width: 2rem;
   height: 2rem;
+  fill: $white;
+  &:hover {
+    fill: $red;
+  }
 }
 .svg__arrow-back {
   transform: rotate(180deg);
   margin-right: 1.5rem;
   width: 2rem;
   height: 2rem;
+  fill: $white;
+  &:hover {
+    fill: $red;
+  }
 }
 .svg__arrow-down {
   width: 2rem;
   height: 2rem;
   transform: rotate(90deg);
+  fill: white;
 }
-.svg__heart {
+.svg__heart-2 {
   width: 6rem;
+  height: 6rem;
   margin-left: 1rem;
+  fill: $red;
 }
 .svg__cow-white {
   width: 6rem;
+  height: 6rem;
   fill: $white;
+}
+.svg__exit {
+  width: 2rem;
+  height: 2rem;
+  fill: white;
+  &:hover {
+    fill: $red;
+  }
 }
 
 // page
 .page {
-  &__container {
-    height: 100vh;
-    padding: 4rem 3rem;
+  &__container-2 {
     background-image: url('../images/landing-bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
     justify-content: space-between;
   }
 }
 
 // header
 .header {
-  &__container {
+  &__containerr {
     font-family: 'Syne', sans-serif;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: flex-start;
-  }
-  &__container-2 {
     width: 100%;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column;
     justify-content: space-between;
+    margin-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
   }
   &__chef-section {
     margin-bottom: 2rem;
@@ -66,9 +87,14 @@
   &__chef {
     font-size: 2rem;
   }
+  &__rest {
+    &:hover {
+      color: $red;
+    }
+  }
   &__recipe {
     font-size: 2.5rem;
-    width: 50vw;
+    width: 80%;
   }
   &__arrow-link {
     text-decoration: none;
@@ -77,31 +103,43 @@
 
 // main
 .main {
-  &__container {
+  &__container-2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__container-img {
+    width: 50%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: center;
   }
   &__photo {
-    height: 30vh;
+    width: 40%;
   }
   &__video {
-    height: 30vh;
     border: 1.5rem solid black;
+    width: 50%;
   }
 }
 
 // footer
 .footer {
-  &__container {
-    padding: 2.5rem 0;
+  &__container-2 {
+    margin-bottom: 2rem;
+    width: 100%;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
   }
   &__logos {
+    padding-left: 2rem;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -111,6 +149,7 @@
     font-size: 4rem;
   }
   &__download {
+    padding-right: 2rem;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -118,5 +157,70 @@
   &__link-recipe {
     font-size: 2rem;
     margin: 0 1rem;
+    &:hover {
+      color: $red;
+    }
+  }
+  &__bar-container {
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  &__bar-grey {
+    margin-left: 0;
+    width: 50vw;
+    background-color: $marengo;
+    height: 1rem;
+  }
+  &__bar-red {
+    width: 50vw;
+    background-color: $red;
+    height: 1rem;
   }
 }
+
+// @media all and (max-width: 1024px) {
+//   .page {
+//     &__container-2 {
+//       height: 100%;
+//     }
+//   }
+//   .header {
+//     &__recipe {
+//       width: 100%;
+//     }
+//   }
+//   .main {
+//     &__container-2 {
+//       padding-left: 2rem;
+//       padding-right: 2rem;
+//       display: flex;
+//       flex-flow: column wrap;
+//       align-items: center;
+//     }
+//     &__container-img {
+//       width: 100%;
+//       padding-right: 0rem;
+//       padding-top: 1rem;
+//       padding-bottom: 1rem;
+//       display: flex;
+//       flex-flow: row nowrap;
+//       align-items: center;
+//       justify-content: space-between;
+//     }
+//     &__photo {
+//       height: 50%;
+//     }
+//     &__video {
+//       width: 100%;
+//       height: 50vh;
+//       border: 1.5rem solid black;
+//     }
+//   }
+//   .footer {
+//     &__link-recipe {
+//       font-size: 1.5rem;
+//     }
+//   }
+// }
