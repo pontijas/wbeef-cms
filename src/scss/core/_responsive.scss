@@ -1,9 +1,5 @@
+// phone
 @media all and (max-width: 520px) {
-  .header__iframe {
-    box-sizing: content-box;
-    width: 70vw;
-    height: 45vh;
-  }
   .header__title {
     font-size: 3.5rem;
   }
@@ -26,6 +22,9 @@
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
+  }
+  .div-iframe {
+    width: 100%;
   }
   .main__title {
     margin-bottom: 2.5rem;
@@ -58,11 +57,11 @@
     height: 3.5rem;
   }
 }
+
+// ipad
 @media all and (max-width: 1024) {
-  .header__iframe {
-    box-sizing: content-box;
-    width: 70vw;
-    height: 45vh;
+  .div-iframe {
+    width: 60%;
   }
   .header__title {
     font-size: 3.5rem;
