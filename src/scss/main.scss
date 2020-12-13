@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap');
 @import 'core/variables';
 @import 'core/reset';
-@import 'core/_responsive';
 
 // svg
 .svg {
@@ -11,15 +10,15 @@
   margin-right: 3rem;
   width: 1rem;
   height: 1rem;
+  fill: $white;
 }
 .svg__heart {
-  background-color: $white;
   width: 6rem;
   height: 5.5rem;
   margin-left: 1rem;
+  fill: $red;
 }
 .svg__cow {
-  background-color: $white;
   width: 6rem;
   height: 5.5rem;
 }
@@ -53,7 +52,6 @@
   &__nav-item {
     list-style: none;
   }
-
   &__title {
     font-size: 4rem;
     text-align: center;
@@ -81,7 +79,7 @@
 // video
 .div-iframe {
   display: block;
-  width: 50%;
+  width: 70%;
 }
 .header__container-iframe {
   margin-bottom: 5rem;
@@ -115,10 +113,6 @@
     margin-bottom: 2rem;
     font-size: 3.5rem;
   }
-  &__arrow {
-    margin-right: 3rem;
-    width: 1rem;
-  }
   &__list-item {
     padding-bottom: 1rem;
     list-style: none;
@@ -129,7 +123,6 @@
   }
   &__link {
     text-decoration: none;
-    font-size: 0.75rem;
   }
   &__name {
     font-size: 1.5rem;
@@ -138,6 +131,7 @@
     }
   }
   &__restaurant {
+    font-size: 0.75rem;
     color: $grey;
   }
 }
@@ -163,8 +157,32 @@
     justify-content: center;
   }
   &__small {
-    background-color: white;
     color: $black;
     font-size: 4rem;
+  }
+}
+
+// responsive
+
+@media all and (min-width: 320) {
+  .header {
+    &__title {
+      font-size: 3rem;
+      background-color: fuchsia;
+    }
+  }
+  .div-iframe {
+    width: 60%;
+  }
+  .main {
+    &__title {
+      font-size: 2.5rem;
+    }
+    &__name {
+      font-size: 1.25rem;
+    }
+    &__restaurant {
+      font-size: 1rem;
+    }
   }
 }
